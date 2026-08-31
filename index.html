@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TechStore Support</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <div class="chat-app">
+    <header class="chat-header">
+      <div class="brand">
+        <span class="brand-mark">TS</span>
+        <div>
+          <h1>TechStore Support</h1>
+          <p class="status"><span class="dot"></span> Online</p>
+        </div>
+      </div>
+    </header>
+
+    <main id="messages" class="messages">
+      <div class="msg agent">
+        <p>Hi! I'm your TechStore support assistant. Ask me about products, shipping, returns, or pricing.</p>
+      </div>
+    </main>
+
+    <form id="chat-form" class="composer">
+      <input
+        id="user-input"
+        type="text"
+        placeholder="Type your question..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit" id="send-btn">Send</button>
+    </form>
+
+    <div class="footer-credit">
+      AI Support Agent &bull; Built by Muhammad Shayan Khurshid
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
